@@ -1,0 +1,64 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif; /* perbaikan */
+}
+
+.kalkulator{
+  width: 250px;
+  background-color: grey;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#display{
+  width: 100%; /* biar mengikuti parent */
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid #ccc; /* perbaikan */
+  border-radius: 5px;
+  box-sizing: border-box; /* biar ga melebar */
+}
+
+.button{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.btn:active{
+  background-color: #ddd;
+}
+
+.operator{
+  background-color: orange;
+}
+
+.operator:active{
+  background-color: red;
+}
+
+.clear{
+  grid-column: span 4;
+  background-color: red;
+  color: white;
+}
+
+clear:active{
+background-color: orange;
+}
+
